@@ -69,5 +69,36 @@ namespace TICARIOTOMASYON
             listele();
             
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            idtext.Text = dr["ID"].ToString();
+            adtext.Text = dr["URUNAD"].ToString();         
+            markatext.Text = dr["MARKA"].ToString();
+            modeltext.Text = dr["MODAL"].ToString();
+            yılltext.Text = dr["YIL"].ToString();
+            adettext.Text = dr["ADET"].ToString();
+            txtalis.Text = dr["YIL"].ToString();
+            txtsatis.Text = dr["ADET"].ToString();
+            detaytext.Text = dr["ALISFIYAT"].ToString();
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            SqlCommand guncelle = new SqlCommand("update TBL_URUNLER set URUNAD=@p8,MARKA=@p1,MODAL=@p2,YIL=@p3,ADET=@p4,ALISFIYAT=@p5,SATISFIYAT=@p6,DETAY=@p7 where ID="+idtext.Text+"",bgl.baglanti());     
+            guncelle.Parameters.AddWithValue("@p8", adtext.Text);
+            guncelle.Parameters.AddWithValue("@p1", markatext.Text);
+            guncelle.Parameters.AddWithValue("@p2", modeltext.Text);
+            guncelle.Parameters.AddWithValue("@p3", yılltext.Text);
+            guncelle.Parameters.AddWithValue("@p4", decimal.Parse(adettext.Text));
+            guncelle.Parameters.AddWithValue("@p5", txtalis.Text);
+            guncelle.Parameters.AddWithValue("@p6", decimal.Parse(txtsatis.Text));
+            guncelle.Parameters.AddWithValue("@p7", detaytext.Text);
+            guncelle.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("ürün eklendi");
+            listele();
+        }
     }
 }

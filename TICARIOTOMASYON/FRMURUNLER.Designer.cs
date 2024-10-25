@@ -32,6 +32,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
             this.detaytext = new System.Windows.Forms.RichTextBox();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -51,7 +52,7 @@
             this.adtext = new System.Windows.Forms.MaskedTextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.idtext = new System.Windows.Forms.MaskedTextBox();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -64,7 +65,7 @@
             this.gridControl1.Location = new System.Drawing.Point(12, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(580, 474);
+            this.gridControl1.Size = new System.Drawing.Size(580, 487);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -73,9 +74,11 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.simpleButton2);
             this.groupControl1.Controls.Add(this.simpleButton1);
             this.groupControl1.Controls.Add(this.btnkaydet);
             this.groupControl1.Controls.Add(this.detaytext);
@@ -96,19 +99,29 @@
             this.groupControl1.Controls.Add(this.adtext);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.idtext);
-            this.groupControl1.Location = new System.Drawing.Point(593, 0);
+            this.groupControl1.Location = new System.Drawing.Point(598, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(258, 474);
+            this.groupControl1.Size = new System.Drawing.Size(253, 487);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "groupControl1";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(73, 409);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(152, 37);
+            this.simpleButton1.TabIndex = 20;
+            this.simpleButton1.Text = "SİL";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnkaydet
             // 
             this.btnkaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnkaydet.ImageOptions.Image")));
             this.btnkaydet.Location = new System.Drawing.Point(73, 374);
             this.btnkaydet.Name = "btnkaydet";
-            this.btnkaydet.Size = new System.Drawing.Size(152, 23);
+            this.btnkaydet.Size = new System.Drawing.Size(152, 29);
             this.btnkaydet.TabIndex = 19;
             this.btnkaydet.Text = "KAYDET";
             this.btnkaydet.Click += new System.EventHandler(this.btnkaydet_Click);
@@ -251,21 +264,21 @@
             this.idtext.Size = new System.Drawing.Size(152, 21);
             this.idtext.TabIndex = 0;
             // 
-            // simpleButton1
+            // simpleButton2
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(73, 403);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(152, 23);
-            this.simpleButton1.TabIndex = 20;
-            this.simpleButton1.Text = "SİL";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(73, 452);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(152, 30);
+            this.simpleButton2.TabIndex = 21;
+            this.simpleButton2.Text = "GÜNCELLE";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FRMURUNLER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 473);
+            this.ClientSize = new System.Drawing.Size(858, 489);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FRMURUNLER";
@@ -306,5 +319,6 @@
         private DevExpress.XtraEditors.SimpleButton btnkaydet;
         private System.Windows.Forms.RichTextBox detaytext;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }
