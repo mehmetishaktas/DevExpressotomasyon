@@ -36,11 +36,9 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.İilcetxt = new System.Windows.Forms.MaskedTextBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.txtmail = new System.Windows.Forms.MaskedTextBox();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.iltxt = new System.Windows.Forms.MaskedTextBox();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.teltext = new System.Windows.Forms.MaskedTextBox();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -50,6 +48,8 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.idtext = new System.Windows.Forms.MaskedTextBox();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.ilcetxt = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.iltxt = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.vergitxt = new System.Windows.Forms.MaskedTextBox();
             this.tctext = new System.Windows.Forms.MaskedTextBox();
@@ -57,6 +57,8 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ilcetxt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iltxt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
@@ -121,13 +123,6 @@
             this.labelControl7.TabIndex = 14;
             this.labelControl7.Text = "İLÇE :";
             // 
-            // İilcetxt
-            // 
-            this.İilcetxt.Location = new System.Drawing.Point(91, 218);
-            this.İilcetxt.Name = "İilcetxt";
-            this.İilcetxt.Size = new System.Drawing.Size(152, 21);
-            this.İilcetxt.TabIndex = 13;
-            // 
             // labelControl6
             // 
             this.labelControl6.Location = new System.Drawing.Point(69, 194);
@@ -150,13 +145,6 @@
             this.labelControl5.Size = new System.Drawing.Size(20, 13);
             this.labelControl5.TabIndex = 9;
             this.labelControl5.Text = "TC :";
-            // 
-            // iltxt
-            // 
-            this.iltxt.Location = new System.Drawing.Point(91, 191);
-            this.iltxt.Name = "iltxt";
-            this.iltxt.Size = new System.Drawing.Size(156, 21);
-            this.iltxt.TabIndex = 8;
             // 
             // labelControl4
             // 
@@ -221,6 +209,8 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.ilcetxt);
+            this.groupControl1.Controls.Add(this.iltxt);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.vergitxt);
             this.groupControl1.Controls.Add(this.tctext);
@@ -231,11 +221,9 @@
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Controls.Add(this.İilcetxt);
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.txtmail);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.iltxt);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.teltext);
             this.groupControl1.Controls.Add(this.labelControl3);
@@ -249,6 +237,26 @@
             this.groupControl1.Size = new System.Drawing.Size(253, 487);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "groupControl1";
+            // 
+            // ilcetxt
+            // 
+            this.ilcetxt.Location = new System.Drawing.Point(91, 213);
+            this.ilcetxt.Name = "ilcetxt";
+            this.ilcetxt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ilcetxt.Size = new System.Drawing.Size(152, 20);
+            this.ilcetxt.TabIndex = 26;
+            this.ilcetxt.SelectedIndexChanged += new System.EventHandler(this.İilcetxt_SelectedIndexChanged);
+            // 
+            // iltxt
+            // 
+            this.iltxt.Location = new System.Drawing.Point(91, 192);
+            this.iltxt.Name = "iltxt";
+            this.iltxt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.iltxt.Size = new System.Drawing.Size(152, 20);
+            this.iltxt.TabIndex = 25;
+            this.iltxt.SelectedIndexChanged += new System.EventHandler(this.iltxt_SelectedIndexChanged);
             // 
             // labelControl10
             // 
@@ -301,6 +309,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ilcetxt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iltxt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
@@ -316,11 +326,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private System.Windows.Forms.MaskedTextBox İilcetxt;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private System.Windows.Forms.MaskedTextBox txtmail;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private System.Windows.Forms.MaskedTextBox iltxt;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private System.Windows.Forms.MaskedTextBox teltext;
         private DevExpress.XtraEditors.LabelControl labelControl3;
@@ -335,5 +343,7 @@
         private System.Windows.Forms.MaskedTextBox tctext;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private System.Windows.Forms.MaskedTextBox vergitxt;
+        private DevExpress.XtraEditors.ComboBoxEdit ilcetxt;
+        private DevExpress.XtraEditors.ComboBoxEdit iltxt;
     }
 }

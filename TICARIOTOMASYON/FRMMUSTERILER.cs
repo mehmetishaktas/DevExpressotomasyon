@@ -27,6 +27,7 @@ namespace TICARIOTOMASYON
         {
             InitializeComponent();
             conenct();
+            sehirlistele();
         }
         
             
@@ -48,13 +49,45 @@ namespace TICARIOTOMASYON
             ekle.Parameters.AddWithValue("@5", tctext.Text);
             ekle.Parameters.AddWithValue("@6", txtmail.Text);
             ekle.Parameters.AddWithValue("@7", iltxt.Text);
-            ekle.Parameters.AddWithValue("@8", İilcetxt.Text);
+            ekle.Parameters.AddWithValue("@8", ilcetxt.Text);
             ekle.Parameters.AddWithValue("@9", adrestxt.Text);
             ekle.Parameters.AddWithValue("@10",vergitxt.Text);
             ekle.ExecuteNonQuery();
             sql.baglanti().Close();
             MessageBox.Show("ürün eklendi");
             conenct();
+        }
+
+        private void iltxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+        void sehirlistele()
+        {
+            SqlCommand komut = new SqlCommand("select ad from TBL_IL", sql.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                iltxt.Properties.Items.Add(dr[0]);
+            }
+            sql.baglanti().Close();
+        }
+        private void iltxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ilcetxt.Clear();         
+            SqlCommand komutt = new SqlCommand("select IL_AD from TBL_ILCE where AD =@p1", sql.baglanti());
+            komutt.Parameters.AddWithValue("@p1", iltxt.SelectedIndex + 1);
+            SqlDataReader dr = komutt.ExecuteReader();
+            while (dr.Read())
+            {
+                ilcetxt.Properties.Items.Add(dr[0]);
+            }
+            sql.baglanti().Close();
+        }
+
+        private void İilcetxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
