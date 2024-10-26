@@ -62,6 +62,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMMUSTERILER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMUSTERILER.Designer.cs">
+      <DependentUpon>FRMMUSTERILER.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMURUNLER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="sqlbaglantisi.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMUSTERILER.resx">
+      <DependentUpon>FRMMUSTERILER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMURUNLER.resx">
       <DependentUpon>FRMURUNLER.cs</DependentUpon>

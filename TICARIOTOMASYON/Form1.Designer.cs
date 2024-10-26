@@ -102,6 +102,7 @@
             this.BTNSTOKLAR.Id = 2;
             this.BTNSTOKLAR.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BTNSTOKLAR.ImageOptions.LargeImage")));
             this.BTNSTOKLAR.Name = "BTNSTOKLAR";
+            this.BTNSTOKLAR.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BTNSTOKLAR_ItemClick);
             // 
             // BTNMUSTERILER
             // 
@@ -109,6 +110,7 @@
             this.BTNMUSTERILER.Id = 3;
             this.BTNMUSTERILER.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BTNMUSTERILER.ImageOptions.LargeImage")));
             this.BTNMUSTERILER.Name = "BTNMUSTERILER";
+            this.BTNMUSTERILER.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BTNMUSTERILER_ItemClick);
             // 
             // BTNFIRMALAR
             // 
@@ -245,6 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 595);
             this.Controls.Add(this.ribbonControl1);
+            this.IsMdiContainer = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

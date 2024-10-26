@@ -27,5 +27,19 @@ namespace TICARIOTOMASYON
             }
             
         }
+
+        private void BTNSTOKLAR_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+        FRMMUSTERILER musteri;
+        private void BTNMUSTERILER_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(musteri == null)
+            {
+                musteri=new FRMMUSTERILER();
+                musteri.MdiParent = this; musteri.Show();
+            }
+        }
     }
 }
