@@ -100,5 +100,10 @@ namespace TICARIOTOMASYON
             MessageBox.Show("ürün eklendi");
             listele();
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

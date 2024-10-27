@@ -32,6 +32,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btnkaydet = new DevExpress.XtraEditors.SimpleButton();
             this.detaytext = new System.Windows.Forms.RichTextBox();
@@ -52,7 +53,6 @@
             this.adtext = new System.Windows.Forms.MaskedTextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.idtext = new System.Windows.Forms.MaskedTextBox();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -69,6 +69,7 @@
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -105,6 +106,16 @@
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "groupControl1";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(73, 452);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(152, 30);
+            this.simpleButton2.TabIndex = 21;
+            this.simpleButton2.Text = "GÜNCELLE";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -263,16 +274,6 @@
             this.idtext.Name = "idtext";
             this.idtext.Size = new System.Drawing.Size(152, 21);
             this.idtext.TabIndex = 0;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(73, 452);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(152, 30);
-            this.simpleButton2.TabIndex = 21;
-            this.simpleButton2.Text = "GÜNCELLE";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FRMURUNLER
             // 
