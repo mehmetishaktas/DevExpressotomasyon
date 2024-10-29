@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\ticariotomasyon\\frmurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\frmurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|c:\\users\\mehmet ishak\\source\\repos\\ticariotomasyon\\ticariotomasyon\\frmfirmalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\frmfirmalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|c:\\users\\mehmet ishak\\source\\repos\\ticariotomasyon\\ticariotomasyon\\frmurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\frmurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|c:\\users\\mehmet ishak\\source\\repos\\ticariotomasyon\\ticariotomasyon\\frmfirmalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\frmfirmalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\ticariotomasyon\\frmmusteriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|c:\\users\\mehmet ishak\\source\\repos\\ticariotomasyon\\ticariotomasyon\\frmmusteriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\frmmusteriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|c:\\users\\mehmet ishak\\source\\repos\\ticariotomasyon\\ticariotomasyon\\frmmusteriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\frmmusteriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|c:\\users\\mehmet ishak\\source\\repos\\ticariotomasyon\\ticariotomasyon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|c:\\users\\mehmet ishak\\source\\repos\\ticariotomasyon\\ticariotomasyon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0640735-06E5-4E8E-AD76-49DB023F0AA2}|TICARIOTOMASYON\\TICARIOTOMASYON.csproj|solutionrelative:ticariotomasyon\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,20 +30,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FRMMUSTERILER.cs",
-              "DocumentMoniker": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMMUSTERILER.cs",
-              "RelativeDocumentMoniker": "TICARIOTOMASYON\\FRMMUSTERILER.cs",
-              "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMMUSTERILER.cs",
-              "RelativeToolTip": "TICARIOTOMASYON\\FRMMUSTERILER.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAArwF8AAAB3AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\Form1.cs",
+              "RelativeDocumentMoniker": "TICARIOTOMASYON\\Form1.cs",
+              "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\Form1.cs",
+              "RelativeToolTip": "TICARIOTOMASYON\\Form1.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAArwDIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T20:50:10.175Z",
+              "WhenOpened": "2024-10-29T17:26:31.249Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FRMFIRMALAR.cs",
+              "DocumentMoniker": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMFIRMALAR.cs",
+              "RelativeDocumentMoniker": "TICARIOTOMASYON\\FRMFIRMALAR.cs",
+              "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMFIRMALAR.cs",
+              "RelativeToolTip": "TICARIOTOMASYON\\FRMFIRMALAR.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAewGkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:21:04.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FRMFIRMALAR.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMFIRMALAR.cs",
+              "RelativeDocumentMoniker": "TICARIOTOMASYON\\FRMFIRMALAR.cs",
+              "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMFIRMALAR.cs [Tasar\u0131m]",
+              "RelativeToolTip": "TICARIOTOMASYON\\FRMFIRMALAR.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:14:50.33Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\Form1.cs",
+              "RelativeDocumentMoniker": "TICARIOTOMASYON\\Form1.cs",
+              "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\Form1.cs [Tasar\u0131m]",
+              "RelativeToolTip": "TICARIOTOMASYON\\Form1.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:13:49.069Z",
+              "EditorCaption": " [Tasar\u0131m]"
             },
             {
               "$type": "Document",
@@ -50,32 +91,7 @@
               "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMMUSTERILER.cs [Tasar\u0131m]",
               "RelativeToolTip": "TICARIOTOMASYON\\FRMMUSTERILER.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T19:38:27.426Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FRMURUNLER.cs",
-              "DocumentMoniker": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMURUNLER.cs",
-              "RelativeDocumentMoniker": "TICARIOTOMASYON\\FRMURUNLER.cs",
-              "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMURUNLER.cs",
-              "RelativeToolTip": "TICARIOTOMASYON\\FRMURUNLER.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAjwFgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:59:21.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FRMURUNLER.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMURUNLER.cs",
-              "RelativeDocumentMoniker": "TICARIOTOMASYON\\FRMURUNLER.cs",
-              "ToolTip": "C:\\Users\\mehmet ishak\\source\\repos\\TICARIOTOMASYON\\TICARIOTOMASYON\\FRMURUNLER.cs [Tasar\u0131m]",
-              "RelativeToolTip": "TICARIOTOMASYON\\FRMURUNLER.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T15:14:11.101Z",
+              "WhenOpened": "2024-10-29T17:15:04.354Z",
               "EditorCaption": " [Tasar\u0131m]"
             }
           ]

@@ -41,5 +41,15 @@ namespace TICARIOTOMASYON
                 musteri.MdiParent = this; musteri.Show();
             }
         }
+        FRMFIRMALAR firmalar;
+        private void BTNFIRMALAR_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(firmalar == null)
+            {
+                firmalar = new FRMFIRMALAR();
+                firmalar.MdiParent = this;
+                firmalar.Show();
+            }
+        }
     }
 }
