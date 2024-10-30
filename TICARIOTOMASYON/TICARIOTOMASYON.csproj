@@ -74,6 +74,12 @@
     <Compile Include="FRMMUSTERILER.Designer.cs">
       <DependentUpon>FRMMUSTERILER.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMPERSONEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPERSONEL.Designer.cs">
+      <DependentUpon>FRMPERSONEL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMURUNLER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMMUSTERILER.resx">
       <DependentUpon>FRMMUSTERILER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPERSONEL.resx">
+      <DependentUpon>FRMPERSONEL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMURUNLER.resx">
       <DependentUpon>FRMURUNLER.cs</DependentUpon>

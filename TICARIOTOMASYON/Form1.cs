@@ -51,5 +51,15 @@ namespace TICARIOTOMASYON
                 firmalar.Show();
             }
         }
+        FRMPERSONEL personel;
+        private void BTNPERSONELLER_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (personel == null)
+            {
+                personel=new FRMPERSONEL();
+                personel.MdiParent= this;
+                personel.Show();
+            }
+        }
     }
 }

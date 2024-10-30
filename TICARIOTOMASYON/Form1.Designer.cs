@@ -126,6 +126,7 @@
             this.BTNPERSONELLER.Id = 5;
             this.BTNPERSONELLER.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BTNPERSONELLER.ImageOptions.LargeImage")));
             this.BTNPERSONELLER.Name = "BTNPERSONELLER";
+            this.BTNPERSONELLER.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BTNPERSONELLER_ItemClick);
             // 
             // BTNGIDERLER
             // 

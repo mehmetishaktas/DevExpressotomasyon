@@ -45,3 +45,4 @@ C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\bin\Debug\Dev
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMURUNLER.resources
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMMUSTERILER.resources
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMFIRMALAR.resources
+C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMPERSONEL.resources
