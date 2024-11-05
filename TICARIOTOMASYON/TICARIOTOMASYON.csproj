@@ -68,6 +68,12 @@
     <Compile Include="FRMFIRMALAR.Designer.cs">
       <DependentUpon>FRMFIRMALAR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMMAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMAIL.Designer.cs">
+      <DependentUpon>FRMMAIL.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMMUSTERILER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMFIRMALAR.resx">
       <DependentUpon>FRMFIRMALAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMAIL.resx">
+      <DependentUpon>FRMMAIL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMMUSTERILER.resx">
       <DependentUpon>FRMMUSTERILER.cs</DependentUpon>
