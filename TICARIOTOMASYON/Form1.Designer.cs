@@ -84,7 +84,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1008, 150);
+            this.ribbonControl1.Size = new System.Drawing.Size(1283, 150);
             // 
             // BTNURUNLER
             // 
@@ -186,6 +186,7 @@
             this.BTNREHBER.Id = 14;
             this.BTNREHBER.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BTNREHBER.ImageOptions.LargeImage")));
             this.BTNREHBER.Name = "BTNREHBER";
+            this.BTNREHBER.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BTNREHBER_ItemClick);
             // 
             // BTNANASAYFA
             // 
@@ -247,7 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1283, 748);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "Form1";

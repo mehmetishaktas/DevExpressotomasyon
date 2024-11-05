@@ -61,5 +61,15 @@ namespace TICARIOTOMASYON
                 personel.Show();
             }
         }
+        FRMREHBER rehber;
+        private void BTNREHBER_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(rehber == null)
+            {
+                rehber = new FRMREHBER();
+                rehber.MdiParent = this;
+                rehber.Show();
+            }
+        }
     }
 }

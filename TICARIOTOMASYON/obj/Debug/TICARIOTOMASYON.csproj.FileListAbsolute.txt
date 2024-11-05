@@ -46,3 +46,4 @@ C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TIC
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMMUSTERILER.resources
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMFIRMALAR.resources
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMPERSONEL.resources
+C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMREHBER.resources
