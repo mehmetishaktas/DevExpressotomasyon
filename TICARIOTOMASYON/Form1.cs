@@ -71,5 +71,16 @@ namespace TICARIOTOMASYON
                 rehber.Show();
             }
         }
+        FRMGIDERLER giderler;
+        private void BTNGIDERLER_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(giderler == null)
+            {
+                giderler = new FRMGIDERLER();
+                giderler.MdiParent = this;
+                giderler.Show();
+            }
+
+        }
     }
 }

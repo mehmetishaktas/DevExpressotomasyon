@@ -134,6 +134,7 @@
             this.BTNGIDERLER.Id = 6;
             this.BTNGIDERLER.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BTNGIDERLER.ImageOptions.LargeImage")));
             this.BTNGIDERLER.Name = "BTNGIDERLER";
+            this.BTNGIDERLER.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BTNGIDERLER_ItemClick);
             // 
             // BTNKASA
             // 
