@@ -37,6 +37,8 @@
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.tarih = new System.Windows.Forms.MaskedTextBox();
+            this.firmaid = new DevExpress.XtraEditors.ComboBoxEdit();
             this.hesapt = new DevExpress.XtraEditors.ComboBoxEdit();
             this.hesap = new System.Windows.Forms.MaskedTextBox();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
@@ -56,8 +58,6 @@
             this.bankaid = new System.Windows.Forms.MaskedTextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.idtext = new System.Windows.Forms.MaskedTextBox();
-            this.tarih = new System.Windows.Forms.DateTimePicker();
-            this.firmaid = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.xtraTabPage3.SuspendLayout();
@@ -68,8 +68,8 @@
             this.xtraTabControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hesapt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firmaid.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapt.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -118,6 +118,7 @@
             this.gridView2.Appearance.Row.Options.UseBorderColor = true;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
+            this.gridView2.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView2_FocusedRowChanged);
             // 
             // xtraTabPage4
             // 
@@ -139,8 +140,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.firmaid);
             this.groupControl1.Controls.Add(this.tarih);
+            this.groupControl1.Controls.Add(this.firmaid);
             this.groupControl1.Controls.Add(this.hesapt);
             this.groupControl1.Controls.Add(this.hesap);
             this.groupControl1.Controls.Add(this.simpleButton2);
@@ -166,6 +167,24 @@
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "groupControl1";
             // 
+            // tarih
+            // 
+            this.tarih.Location = new System.Drawing.Point(97, 206);
+            this.tarih.Mask = "00/00/0000";
+            this.tarih.Name = "tarih";
+            this.tarih.Size = new System.Drawing.Size(152, 21);
+            this.tarih.TabIndex = 29;
+            this.tarih.ValidatingType = typeof(System.DateTime);
+            // 
+            // firmaid
+            // 
+            this.firmaid.Location = new System.Drawing.Point(97, 254);
+            this.firmaid.Name = "firmaid";
+            this.firmaid.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.firmaid.Size = new System.Drawing.Size(152, 20);
+            this.firmaid.TabIndex = 28;
+            // 
             // hesapt
             // 
             this.hesapt.Location = new System.Drawing.Point(97, 228);
@@ -178,7 +197,6 @@
             // hesap
             // 
             this.hesap.Location = new System.Drawing.Point(97, 152);
-            this.hesap.Mask = "00000000000";
             this.hesap.Name = "hesap";
             this.hesap.Size = new System.Drawing.Size(152, 21);
             this.hesap.TabIndex = 22;
@@ -200,6 +218,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(152, 37);
             this.simpleButton1.TabIndex = 20;
             this.simpleButton1.Text = "SİL";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnkaydet
             // 
@@ -209,6 +228,7 @@
             this.btnkaydet.Size = new System.Drawing.Size(152, 29);
             this.btnkaydet.TabIndex = 19;
             this.btnkaydet.Text = "KAYDET";
+            this.btnkaydet.Click += new System.EventHandler(this.btnkaydet_Click);
             // 
             // labelControl9
             // 
@@ -268,7 +288,6 @@
             // iban
             // 
             this.iban.Location = new System.Drawing.Point(97, 125);
-            this.iban.Mask = "TR000000000000000000000000";
             this.iban.Name = "iban";
             this.iban.Size = new System.Drawing.Size(152, 21);
             this.iban.TabIndex = 6;
@@ -318,22 +337,6 @@
             this.idtext.Size = new System.Drawing.Size(152, 21);
             this.idtext.TabIndex = 0;
             // 
-            // tarih
-            // 
-            this.tarih.Location = new System.Drawing.Point(97, 204);
-            this.tarih.Name = "tarih";
-            this.tarih.Size = new System.Drawing.Size(152, 21);
-            this.tarih.TabIndex = 27;
-            // 
-            // firmaid
-            // 
-            this.firmaid.Location = new System.Drawing.Point(97, 254);
-            this.firmaid.Name = "firmaid";
-            this.firmaid.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.firmaid.Size = new System.Drawing.Size(152, 20);
-            this.firmaid.TabIndex = 28;
-            // 
             // FRMBANKALAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,8 +358,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hesapt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.firmaid.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hesapt.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -391,6 +394,6 @@
         private System.Windows.Forms.MaskedTextBox idtext;
         private DevExpress.XtraEditors.ComboBoxEdit hesapt;
         private DevExpress.XtraEditors.ComboBoxEdit firmaid;
-        private System.Windows.Forms.DateTimePicker tarih;
+        private System.Windows.Forms.MaskedTextBox tarih;
     }
 }
