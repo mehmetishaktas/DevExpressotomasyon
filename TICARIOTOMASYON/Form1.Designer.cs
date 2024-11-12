@@ -180,6 +180,7 @@
             this.BTNBANKALAR.Id = 13;
             this.BTNBANKALAR.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BTNBANKALAR.ImageOptions.LargeImage")));
             this.BTNBANKALAR.Name = "BTNBANKALAR";
+            this.BTNBANKALAR.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BTNBANKALAR_ItemClick);
             // 
             // BTNREHBER
             // 

@@ -116,5 +116,10 @@ namespace TICARIOTOMASYON
             adrestxt.Text = dr["ADRES"].ToString();
             vergitxt.Text = dr["VERGIDAIRE"].ToString();
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

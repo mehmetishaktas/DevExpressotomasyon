@@ -75,13 +75,14 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(1, 0);
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(618, 482);
+            this.gridControl1.Size = new System.Drawing.Size(690, 604);
             this.gridControl1.TabIndex = 4;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // ilcetxt
             // 
@@ -154,9 +155,9 @@
             this.groupControl1.Controls.Add(this.adtext);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.idtext);
-            this.groupControl1.Location = new System.Drawing.Point(620, 0);
+            this.groupControl1.Location = new System.Drawing.Point(691, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(364, 604);
+            this.groupControl1.Size = new System.Drawing.Size(293, 604);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "groupControl1";
             // 
@@ -340,7 +341,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 549);
+            this.ClientSize = new System.Drawing.Size(986, 598);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FRMFIRMALAR";

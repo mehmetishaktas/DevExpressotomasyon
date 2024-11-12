@@ -82,5 +82,15 @@ namespace TICARIOTOMASYON
             }
 
         }
+        FRMBANKALAR BANKALARR;
+        private void BTNBANKALAR_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           if(BANKALARR == null)
+            {
+                BANKALARR = new FRMBANKALAR();
+                BANKALARR.MdiParent = this;
+                BANKALARR.Show();
+            }
+        }
     }
 }

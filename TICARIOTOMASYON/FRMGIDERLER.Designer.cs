@@ -67,6 +67,7 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // gridControl1
             // 
@@ -101,6 +102,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(152, 30);
             this.simpleButton2.TabIndex = 21;
             this.simpleButton2.Text = "GÜNCELLE";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -110,6 +112,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(152, 37);
             this.simpleButton1.TabIndex = 20;
             this.simpleButton1.Text = "SİL";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btnkaydet
             // 

@@ -49,3 +49,4 @@ C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TIC
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMREHBER.resources
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMMAIL.resources
 C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMGIDERLER.resources
+C:\Users\mehmet ishak\source\repos\TICARIOTOMASYON\TICARIOTOMASYON\obj\Debug\TICARIOTOMASYON.FRMBANKALAR.resources
