@@ -37,8 +37,8 @@
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.firmaid = new DevExpress.XtraEditors.LookUpEdit();
             this.tarih = new System.Windows.Forms.MaskedTextBox();
-            this.firmaid = new DevExpress.XtraEditors.ComboBoxEdit();
             this.hesapt = new DevExpress.XtraEditors.ComboBoxEdit();
             this.hesap = new System.Windows.Forms.MaskedTextBox();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
@@ -140,8 +140,8 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.tarih);
             this.groupControl1.Controls.Add(this.firmaid);
+            this.groupControl1.Controls.Add(this.tarih);
             this.groupControl1.Controls.Add(this.hesapt);
             this.groupControl1.Controls.Add(this.hesap);
             this.groupControl1.Controls.Add(this.simpleButton2);
@@ -167,6 +167,17 @@
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "groupControl1";
             // 
+            // firmaid
+            // 
+            this.firmaid.Location = new System.Drawing.Point(97, 254);
+            this.firmaid.Name = "firmaid";
+            this.firmaid.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.firmaid.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.firmaid.Size = new System.Drawing.Size(152, 20);
+            this.firmaid.TabIndex = 30;
+            this.firmaid.EditValueChanged += new System.EventHandler(this.lookUpEdit1_EditValueChanged);
+            // 
             // tarih
             // 
             this.tarih.Location = new System.Drawing.Point(97, 206);
@@ -175,15 +186,6 @@
             this.tarih.Size = new System.Drawing.Size(152, 21);
             this.tarih.TabIndex = 29;
             this.tarih.ValidatingType = typeof(System.DateTime);
-            // 
-            // firmaid
-            // 
-            this.firmaid.Location = new System.Drawing.Point(97, 254);
-            this.firmaid.Name = "firmaid";
-            this.firmaid.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.firmaid.Size = new System.Drawing.Size(152, 20);
-            this.firmaid.TabIndex = 28;
             // 
             // hesapt
             // 
@@ -209,6 +211,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(152, 30);
             this.simpleButton2.TabIndex = 21;
             this.simpleButton2.Text = "GÜNCELLE";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -393,7 +396,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.MaskedTextBox idtext;
         private DevExpress.XtraEditors.ComboBoxEdit hesapt;
-        private DevExpress.XtraEditors.ComboBoxEdit firmaid;
         private System.Windows.Forms.MaskedTextBox tarih;
+        private DevExpress.XtraEditors.LookUpEdit firmaid;
     }
 }

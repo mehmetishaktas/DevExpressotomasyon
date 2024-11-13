@@ -20,6 +20,8 @@ namespace TICARIOTOMASYON
         {
             InitializeComponent();
             listele();
+            firmalistesi();
+            temizle();
              
             
         }
@@ -37,9 +39,30 @@ namespace TICARIOTOMASYON
             daa.Fill(dtt);
             gridControl1.DataSource = dtt;
         }
+        void firmalistesi()
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select ID,AD from TBL_FIRMALAR", sql.baglanti());
+            da.Fill(dt);
+            firmaid.Properties.ValueMember = "ID";
+            firmaid.Properties.DisplayMember = "AD";
+            firmaid.Properties.DataSource = dt;
+        }
+        void temizle()
+        {
+            idtext.Clear();
+            bankaid.Clear();
+            sube.Clear();
+            iban.Clear();
+            hesap.Clear();
+            yetkili.Clear();
+            tarih.Clear();
+            hesapt.Clear();
+            firmaid.Clear();
+
+        }
 
 
-            
         private void gridView1_DoubleClick(object sender, EventArgs e)
         {
 
@@ -60,11 +83,12 @@ namespace TICARIOTOMASYON
             ekle.Parameters.AddWithValue("@5", yetkili.Text);
             ekle.Parameters.AddWithValue("@6", Convert.ToDateTime(tarih.Text));
             ekle.Parameters.AddWithValue("@7", hesapt.Text);
-            ekle.Parameters.AddWithValue("@8", firmaid.Text);
+            ekle.Parameters.AddWithValue("@8", firmaid.EditValue);
             ekle.ExecuteNonQuery();
             sql.baglanti().Close();
             MessageBox.Show("eklendi");
             listele();
+            temizle();
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
@@ -88,6 +112,40 @@ namespace TICARIOTOMASYON
             tarih.Text = dr["TARIH"].ToString();
             hesapt.Text = dr["HESAPTURU"].ToString();
             firmaid.Text = dr["FIRMAID"].ToString();           
+        }
+
+        private void firmaid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void firmaid_Properties_Click(object sender, EventArgs e)
+        {
+            
+        }
+        
+        private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            SqlCommand guncelle = new SqlCommand("update TLB_BANKALAR SET BANKAADI=@1,SUBE=@2,IBAN=@3,HESAPNO=@4,YETKILI=@5,TARIH=@6,HESAPTURU=@7,FIRMAID=@8 where ID="+idtext.Text+"", sql.baglanti());
+            guncelle.Parameters.AddWithValue("@1", bankaid.Text);
+            guncelle.Parameters.AddWithValue("@2", sube.Text);
+            guncelle.Parameters.AddWithValue("@3", iban.Text);
+            guncelle.Parameters.AddWithValue("@4", hesap.Text);
+            guncelle.Parameters.AddWithValue("@5", yetkili.Text);
+            guncelle.Parameters.AddWithValue("@6", tarih.Text);
+            guncelle.Parameters.AddWithValue("@7", hesapt.Text);
+            guncelle.Parameters.AddWithValue("@8", firmaid.Text);
+            guncelle.ExecuteNonQuery();
+            sql.baglanti().Close();
+            MessageBox.Show("GÜNCELLENDİ");
+            listele();
+            temizle();
+
         }
     }
 }
