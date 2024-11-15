@@ -59,12 +59,14 @@
             this.adtext = new System.Windows.Forms.MaskedTextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.idtext = new System.Windows.Forms.MaskedTextBox();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilcetxt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iltxt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView1
@@ -81,7 +83,8 @@
             this.gridControl1.Size = new System.Drawing.Size(690, 604);
             this.gridControl1.TabIndex = 4;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridView1,
+            this.gridView2});
             this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // ilcetxt
@@ -337,6 +340,11 @@
             this.idtext.Size = new System.Drawing.Size(152, 21);
             this.idtext.TabIndex = 0;
             // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.gridControl1;
+            this.gridView2.Name = "gridView2";
+            // 
             // FRMFIRMALAR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,6 +361,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,5 +398,6 @@
         private System.Windows.Forms.MaskedTextBox yetkiliadtxt;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private System.Windows.Forms.MaskedTextBox FAXTXT;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
     }
 }

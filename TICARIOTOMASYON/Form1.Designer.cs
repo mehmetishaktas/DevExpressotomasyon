@@ -209,6 +209,7 @@
             this.BTNFATURALAR.Id = 17;
             this.BTNFATURALAR.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BTNFATURALAR.ImageOptions.LargeImage")));
             this.BTNFATURALAR.Name = "BTNFATURALAR";
+            this.BTNFATURALAR.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BTNFATURALAR_ItemClick);
             // 
             // BTNAYARLAR
             // 

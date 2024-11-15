@@ -68,6 +68,12 @@
     <Compile Include="FRMBANKALAR.Designer.cs">
       <DependentUpon>FRMBANKALAR.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRMFATURALAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMFATURALAR.Designer.cs">
+      <DependentUpon>FRMFATURALAR.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMFIRMALAR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRMBANKALAR.resx">
       <DependentUpon>FRMBANKALAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMFATURALAR.resx">
+      <DependentUpon>FRMFATURALAR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMFIRMALAR.resx">
       <DependentUpon>FRMFIRMALAR.cs</DependentUpon>

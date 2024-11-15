@@ -92,5 +92,15 @@ namespace TICARIOTOMASYON
                 BANKALARR.Show();
             }
         }
+        FRMFATURALAR FATURALAR;
+        private void BTNFATURALAR_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(FATURALAR == null)
+            {
+                FATURALAR = new FRMFATURALAR();
+                FATURALAR.MdiParent = this;
+                FATURALAR.Show();
+            }
+        }
     }
 }
